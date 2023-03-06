@@ -185,8 +185,6 @@ color: hsl(5, 85%, 63%)
     display: none;
   }
 
-
-
   .navbar-toggler button {
     display: block;
     border: none;
@@ -254,6 +252,8 @@ color: hsl(5, 85%, 63%)
 
   .side-article p {
     line-height: 50px;
+    width: 600px;
+;
   }
 
   .top-three-body {
