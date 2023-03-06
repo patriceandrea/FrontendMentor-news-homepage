@@ -1,0 +1,289 @@
+*,
+body {
+  background-color: hsl(36, 100%, 99%);
+  font-family: 'Inter', sans-serif;
+
+}
+
+p {
+  color: hsl(236, 13%, 42%);
+}
+
+/* desktop responsive */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 7em;
+}
+
+.navbar-link{
+  margin-left: 40em;
+}
+
+
+.navbar-link img{
+  display:none; 
+}
+
+.navbar-link a {
+  padding-right: 3em;
+  font-weight: 400;
+  color: hsl(236, 13%, 42%);
+  font-size: 18px;
+
+}
+
+.navbar-link a:hover{
+color: hsl(5, 85%, 63%)
+}
+
+.navbar-toggler button {
+  display: none;
+}
+
+
+
+.main-article {
+  margin-left: 6em;
+}
+
+.main-article img {
+  width: 53em;
+  height: 22em;
+}
+
+.main-container {
+  display: flex;
+  margin-top: -4em;
+  margin-right: 8em;
+}
+
+.side-article {
+ width:  1180px;
+  height: 640px;
+  margin: 20px;
+  background-color: hsl(240, 100%, 5%);
+  margin-left: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
+  margin-top: auto;
+  margin-right: 7em;
+}
+
+.side-article h1 {
+  color: hsl(35, 77%, 62%);
+  background-color: hsl(240, 100%, 5%);
+  font-weight: 800;
+  margin-top: 1em;
+  font-size: 2.5em;
+}
+
+.side-article p {
+  color: hsl(233, 8%, 79%);
+  background-color: hsl(240, 100%, 5%);
+}
+
+.side-article h2 {
+  color: hsl(36, 100%, 99%);
+  background-color: hsl(240, 100%, 5%);
+}
+
+.side-article p {
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.side-article h2 {
+  font-weight: 600;
+}
+
+.border {
+  border: 0.2px solid hsl(236, 13%, 42%);
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+
+.main-article-parent {
+  display: flex;
+}
+
+.main-article-header h1 {
+  font-size: 3em;
+  font-weight: 800;
+}
+
+.main-article-body {
+  padding: 30px 81px 0px 70px;
+}
+
+.main-article-body p {
+  line-height: 30px;
+  font-size: 19px;
+}
+
+.main-article-body button {
+  background-color: hsl(5, 85%, 63%);
+  border: none;
+  color: hsl(36, 100%, 99%);
+  width: 210px;
+  height: 50px;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 5px;
+  margin-top: 2em;
+}
+
+.main-article button:hover {
+  background-color: hsl(240, 100%, 5%)
+}
+
+.top-three-container {
+  margin-left: 6em;
+  margin-top: 4em;
+}
+
+.top-three-body {
+  display: flex;
+  margin-right: 3em;
+}
+
+.top-three-body img {
+  width: 9em;
+  height: 11em;
+  margin-right: 2em;
+}
+
+
+.top-three-body-row h1 {
+  color: hsl(233, 8%, 79%);
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.top-three-body-row h3{
+  line-height: 15px;
+}
+
+.top-three-responsive{
+  display: flex;
+}
+
+/* Mobile Responsive */
+@media (max-width:420px) {
+
+.navbar{
+  margin-left:3em;
+}
+  .logo img {
+    width: 100px;
+  }
+
+  .navbar-toggler button img {
+    width: 100px;
+  }
+
+  .navbar-link {
+    display: none;
+  }
+
+
+
+  .navbar-toggler button {
+    display: block;
+    border: none;
+    margin-left: 33em;
+  }
+
+.main-article{
+  margin-left: 2em;
+  margin-top: 9em;
+}
+
+  .main-article img {
+    display: none;
+  }
+
+  .main-article::before {
+    content: url('./assets/images/image-web-3-mobile.jpg');
+    display: block;
+    /* max-width: 100%; */
+    width: 10em;
+  }
+
+
+  .main-article-parent {
+    display: block;
+    width: 700px;
+  }
+
+  .main-article-header h1 {
+    font-size: 6em;
+  }
+
+  .main-container {
+    display: block;
+  }
+
+  .main-article-body {
+    padding: 0;
+  }
+
+  .main-article-body p {
+    line-height: 50px;
+    font-size: 31px;
+  }
+
+  .main-article-body button {
+    width: 350px;
+    height: 92px;
+    font-size: 27px;
+  }
+
+  .side-article {
+    font-size: 2em;
+    width: 580px;
+    height: 1350px;
+    margin-left: 4px;
+    margin-right: 1px;
+  }
+
+  .side-article h1{
+    padding-top: 0.5em;
+  }
+
+  .side-article p {
+    line-height: 50px;
+  }
+
+  .top-three-body {
+    flex-direction: column;
+  }
+
+  .top-three-body img{
+    width: 12em;
+    height: 16em;
+  }
+
+.top-three-body-row h1{
+  font-size: 55px;
+}
+
+  .top-three-body-row h3{
+    font-size: 31px;
+    width: 360px;
+  }
+
+
+  .top-three-body-row p {
+    width: 360px;
+    font-size: 26px;
+    line-height: 50px;
+  }
+
+  .top-body-image img{
+    margin-bottom: 3em;
+  }
+}
+
+
+
