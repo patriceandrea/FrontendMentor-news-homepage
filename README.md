@@ -40,7 +40,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://patrice-news-homepage.netlify.app/)
 
 ## My process
 
@@ -59,31 +59,22 @@ Use this section to recap over some of your major learnings while working throug
 
 I did this challenge to broaden my knowledge and practice my skills in CSS. Doing this challenge teached me a lot on how to use CSS properties, for example, `display` such as `display:block` and `display:none` for mobile responsiveness instead of always using `display:flex`. 
 
-To see how you can add code snippets, see below:
+I learned how to use make a website responsive. 
 
- - I learned how to use make a website responsive. 
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
+  .main-article::before {
+    content: url('./assets/images/image-web-3-mobile.jpg');
+    display: block;
+    width: 10em;
+  }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+
 
 
 ### Continued development
 
 After this challenge, I realized how I have a lot to learn in Front-End and on how to build a mobile responsive website. 
-
-
-
 ## Author
 
 - Website - [Patrice Pavico](https://patricepavico-portfolio.vercel.app/)
