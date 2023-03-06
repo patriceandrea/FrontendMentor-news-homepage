@@ -12,9 +12,7 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -30,10 +28,10 @@ Users should be able to:
 ### Screenshot
 
 
-Desktop Responsive
+### Desktop Responsive
 ![](./screenshots/Screenshot%202023-03-04%20121249.png)
 
-Mobile Responsive 
+### Mobile Responsive 
 ![](./screenshots/Screenshot-MobileResponsive1.png)
 ![](./screenshots/Screenshot-MobileResponsive2.png)
 ![](./screenshots/Screenshot-MobileResponsive3.png)

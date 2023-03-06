@@ -33,6 +33,7 @@ p {
 
 }
 
+
 .navbar-link a:hover{
 color: hsl(5, 85%, 63%)
 }
@@ -194,10 +195,20 @@ color: hsl(5, 85%, 63%)
     margin-left: 33em;
   }
 
+
+
+  .showMenu {
+    transform: translateY(0);
+}
+
+
+
 .main-article{
   margin-left: 2em;
   margin-top: 9em;
 }
+
+
 
   .main-article img {
     display: none;

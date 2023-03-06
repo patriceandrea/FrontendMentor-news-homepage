@@ -27,27 +27,29 @@
   </head>
   <body>
     <!-- NavBar -->
-    <div class="navbar">
+    <nav class="navbar">
       <div class="logo">
         <img src="assets/images/logo.svg" alt="logo" />
       </div>
     
       <div class="navbar-link">
-        <!-- <img src="./assets/images/icon-menu-close.svg"/> -->
-        <a>Home</a>
-        <a>New</a>
-        <a>Popular</a>
-        <a>Trending</a>
-        <a>Categories</a>
+        <a class="link_items">Home</a>
+        <a class="link_items">New</a>
+        <a class="link_items">Popular</a>
+        <a class="link_items">Trending</a>
+        <a class="link_items">Categories</a>
       </div>
       <div class="navbar-toggler">
-      <button  type="button">
+      <button class="menu_open" type="button">
         <img src="./assets/images/icon-menu.svg"/>
+      </button>
+      <button class="menu_close" type="button" style="display:none">
+        <img src="./assets/images/icon-menu-close.svg" />
       </button>
       </div>   
       <div class="menu">
       </div>
-    </div>
+    </nav>
 
     <!-- Main-Body -->
     <div class="main-container">
@@ -140,17 +142,30 @@
 
 
 <script>
-  const navbarToggler = document.querySelector('.navbar-toggler');
-const menu = document.querySelector('.menu');
-const navbarNav = document.querySelector('.navbar-link');
+const menu = document.querySelector(".navbar-link");
+const menuItems = document.querySelectorAll(".link_items");
+const hamburger = document.querySelector(".navbar-toggler");
+const closeIcon = document.querySelector(".menu_open");
+const menuIcon = document.querySelector(".menu_close");
 
-navbarToggler.addEventListener('click', () => {
-  navbarNav.classList.toggle('active');
-  navbarToggler.style.display = 'none'
-  menu.innerHTML = navbarNav.innerHTML;
-});
+function toggleMenu() {
+    if (menu.classList.contains("showMenu")) {
+        menu.classList.remove("showMenu");
+        closeIcon.style.display = "none";
+        menuIcon.style.display = "block";
+    } else {
+        menu.classList.add("showMenu");
+        closeIcon.style.display = "block";    
+        menuIcon.style.display = "none";
+    
+    }
+}
 
+hamburger.addEventListener("click", toggleMenu);
 
-
-
+menuItems.forEach(
+    function (menuItem) {
+        menuItem.addEventListener("click", toggleMenu);
+    }
+)
 </script>
