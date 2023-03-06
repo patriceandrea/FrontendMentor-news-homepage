@@ -85,11 +85,6 @@ const proudOfThisFunc = () => {
 After this challenge, I realized how I have a lot to learn in Front-End and on how to build a mobile responsive website. 
 
 
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
 
 ## Author
 
