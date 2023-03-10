@@ -31,7 +31,8 @@
       <div class="logo">
         <img src="assets/images/logo.svg" alt="logo" />
       </div>
-    
+<!--     
+      Desktop -->
       <div class="navbar-link">
         <a class="link_items">Home</a>
         <a class="link_items">New</a>
@@ -39,15 +40,36 @@
         <a class="link_items">Trending</a>
         <a class="link_items">Categories</a>
       </div>
-      <div class="navbar-toggler">
-      <button class="menu_open" type="button">
-        <img src="./assets/images/icon-menu.svg"/>
-      </button>
-      <button class="menu_close" type="button" style="display:none">
-        <img src="./assets/images/icon-menu-close.svg" />
-      </button>
-      </div>   
-      <div class="menu">
+  
+			<div class="top-bar">
+
+				<img
+					src="./assets/images/icon-menu.svg"
+					aria-label="three-horizontal-lines"
+					class="burger-b"
+					id="burger-b"
+				/>
+			</div>
+
+<!-- Mobile Responsive -->
+        <nav id="navigation-menu" class="navigation-menu">
+          <div class="side-filter"></div>
+          <img
+            src="./assets/images/icon-menu-close.svg"
+            alt="close-menu"
+            aria-label="x"
+            class="close-b"
+            id="close-b"
+          />
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Popular</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Categories</a></li>
+          </ul>
+        </nav>
+  
       </div>
     </nav>
 
@@ -137,35 +159,31 @@
         
       </div>
     </div>
+    <script>
+      const menu = document.getElementById("navigation-menu");
+      const closeButton = document.getElementById("close-b");
+      const burger = document.getElementById("burger-b");
+      const menuItem = document.getElementsByTagName("li");
+      
+      burger.addEventListener("click", openMenu);
+      closeButton.addEventListener("click", closeMenu);
+      menuItem[0].addEventListener("click", closeMenu);
+      menuItem[1].addEventListener("click", closeMenu);
+      menuItem[2].addEventListener("click", closeMenu);
+      menuItem[3].addEventListener("click", closeMenu);
+      menuItem[4].addEventListener("click", closeMenu);
+      
+      function openMenu() {
+        menu.style.display = "block";   
+       burger.style.display= "none"
+      }
+      
+      function closeMenu() {
+        menu.style.display = "none";
+        burger.style.display= "block"
+      }
+      </script>
   </body>
 </html>
 
 
-<script>
-const menu = document.querySelector(".navbar-link");
-const menuItems = document.querySelectorAll(".link_items");
-const hamburger = document.querySelector(".navbar-toggler");
-const closeIcon = document.querySelector(".menu_open");
-const menuIcon = document.querySelector(".menu_close");
-
-function toggleMenu() {
-    if (menu.classList.contains("showMenu")) {
-        menu.classList.remove("showMenu");
-        closeIcon.style.display = "none";
-        menuIcon.style.display = "block";
-    } else {
-        menu.classList.add("showMenu");
-        closeIcon.style.display = "block";    
-        menuIcon.style.display = "none";
-    
-    }
-}
-
-hamburger.addEventListener("click", toggleMenu);
-
-menuItems.forEach(
-    function (menuItem) {
-        menuItem.addEventListener("click", toggleMenu);
-    }
-)
-</script>

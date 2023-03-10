@@ -9,6 +9,17 @@ p {
   color: hsl(236, 13%, 42%);
 }
 
+li a {
+	text-decoration: none;
+	color: black;
+}
+
+li {
+	list-style: none;
+	margin: 20px 0px;
+}
+
+
 /* desktop responsive */
 .navbar {
   display: flex;
@@ -33,6 +44,7 @@ p {
 }
 
 
+
 .navbar-link a:hover{
 color: hsl(5, 85%, 63%)
 }
@@ -41,7 +53,13 @@ color: hsl(5, 85%, 63%)
   display: none;
 }
 
+.navigation-menu{
+  display: none;
+}
 
+.burger-b{
+  display: none;
+}
 
 .main-article {
   margin-left: 6em;
@@ -167,6 +185,10 @@ color: hsl(5, 85%, 63%)
   display: flex;
 }
 
+
+
+
+
 /* Mobile Responsive */
 @media (max-width:420px) {
 
@@ -192,12 +214,54 @@ color: hsl(5, 85%, 63%)
   }
 
 
+.top-bar img{
+  margin-left: 25em;
+  width: 6em;
+
+}
+ 
+
+.burger-b{
+  display: block;
+}
+
+.side-filter {
+  position: absolute;
+  top: 0;
+  width: 17em;
+  height: 100%;
+  background-color: hsla(240, 100%, 5%, 0.397);
+  right: 30em;
+}
+
+.navigation-menu{
+  margin-left: 13em;
+  position: absolute;
+  height: 101em;
+  top: 0;
+  width: 30em;
+}
+
+.navigation-menu ul li{
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.navigation-menu ul{
+  margin-top: 10em;
+  line-height: 5em;
+}
+
+.navigation-menu img{
+  width: 4em;
+  margin-left: 24em;
+  margin-top: 4em;
+}
+
 .main-article{
   margin-left: 2em;
   margin-top: 9em;
 }
-
-
 
   .main-article img {
     display: none;
