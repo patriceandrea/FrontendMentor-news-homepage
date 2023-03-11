@@ -36,11 +36,13 @@ Users should be able to:
 ![](./screenshots/Screenshot-MobileResponsive2.png)
 ![](./screenshots/Screenshot-MobileResponsive3.png)
 
+![](./screenshots/Capture%20d%E2%80%99%C3%A9cran%202023-03-11%20140617.png)
+
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://patrice-news-homepage.netlify.app/)
+- Solution URL: [solution URL](https://your-solution-url.com)
+- Live Site URL: [Live site URL](https://patrice-news-homepage.netlify.app/)
 
 ## My process
 
